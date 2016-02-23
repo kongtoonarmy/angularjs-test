@@ -2,12 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Index</title>
+    <title>UI Routeer</title>
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/angular/angular.js"></script>
+    <script src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/app/app.js"></script>
+    <script src="/app/controllers/HomeController.js"></script>
+    <script src="/app/controllers/AboutController.js"></script>
 </head>
-<body>
 
+<!-- apply our angular app to our site -->
+<body>
+    <div class="container" ng-app="app">
+
+        <header ng-include="'templates/nav.html'"></header>
+        <div ui-view></div>
+        <footer ng-include="'templates/footer.html'"></footer>
+    </div>
 </body>
 </html>
