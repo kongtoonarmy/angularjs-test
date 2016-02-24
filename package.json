@@ -17,8 +17,12 @@
   },
   "homepage": "https://github.com/kongtoonarmy/angularjs-test#readme",
   "devDependencies": {
+    "express": "^4.13.4"
+  },
+  "dependencies": {
     "angular": "^1.5.0",
     "bootstrap": "^3.3.6",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "jquery": "^2.2.1"
   }
 }
