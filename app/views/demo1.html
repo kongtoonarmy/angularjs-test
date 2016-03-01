@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="Demo">
+<head>
+    <meta charset="utf-8" />
+    <title>Unbinding Scope.$on() Event Handlers In AngularJS</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="/app/demo1.js"></script>
+    <link rel="stylesheet" type="text/css" href="/app/css/demo1.css"></link>
+</head>
+<body ng-controller="AppController">
+
+    <h1>
+        Unbinding Scope.$on() Event Handlers In AngularJS
+    </h1>
+
+    <div ng-controller="EventController" ng-click="toggleListener()" class="event-target left" ng-class="{ active: isWatchingEvent }">
+        {{ eventCount }}
+    </div>
+
+    <div ng-controller="EventController" ng-click="toggleListener()" class="event-target right" ng-class="{ active: isWatchingEvent }">
+        {{ eventCount }}
+    </div>
+
+
+</body>
+</html>

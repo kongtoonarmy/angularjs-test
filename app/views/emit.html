@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Unbinding Scope.$on() Event Handlers In AngularJS</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="/app/emit.js"></script>
+</head>
+<body ng-app="app">
+
+    <div ng-controller="firstCtrl" style="border:2px solid #E75D5C; padding:5px;">
+        <h1>Parent Controller</h1>
+        <p>Emit Message : {{message}}</p>
+        <br />
+
+        <div ng-controller="secondCtrl" style="border:2px solid #428bca;padding:5px;">
+        <h1>Child Controller</h1>
+        <input ng-model="msg">
+        <button ng-click="handleClick(msg);">Emit</button>
+        </div>
+    </div>
+
+</body>
+</html>
