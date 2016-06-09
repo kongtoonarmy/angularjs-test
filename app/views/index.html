@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
     <meta charset="UTF-8">
     <title>Index</title>
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/angular/angular.js"></script>
+    <script src="/app/app.js"></script>
 </head>
-<body>
+<body ng-controller="MainCtrl">
 
+	<p>
+		<a ng-click="incrementFoo()">Increment Foo</a>
+		{{ fooCount }}
+	</p>
 </body>
 </html>
