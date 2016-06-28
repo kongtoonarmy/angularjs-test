@@ -18,4 +18,9 @@ app.controller('MainCtrl', function($scope, $http) {
         return $http.get('/data/tags.json');
         //return $scope.tags;
     };
+
+    $scope.checkTags = function(tag) {
+        console.log(tag);
+        return tag;
+    }
 });
