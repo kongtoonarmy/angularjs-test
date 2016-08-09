@@ -7,9 +7,28 @@
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/boostrap/dist/js/bootstrap.min.js"></script>
     <script src="/node_modules/angular/angular.js"></script>
+    <script src="/bower_components/angular-deckgrid/angular-deckgrid.js"></script>
     <script src="/app/app.js"></script>
+    <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body ng-controller="MainCtrl">
-	{{ title }}
+	<!-- <div deckgrid class="deckgrid" source="photos" cardTemplate="deckgrid-card.html">
+	    
+	</div> -->
+
+	<div deckgrid class="deckgrid" source="photos">
+         <div class="photo">
+            <h3>{{card.name}}</h3>
+
+			<div class="photo-wrapper">
+           		<img data-ng-src="{{card.src}}">
+           	</div>
+           	<div class="photo-description">
+           		{{card.id}}<hr>
+	            {{card.description}}
+           		
+	        </div>
+         </div>
+    </div>
 </body>
 </html>
